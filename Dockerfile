@@ -1,3 +1,2 @@
-FROM ruby:2.1-onbuild
+FROM golang:1.4-onbuild
 EXPOSE 80
-CMD ["bundle", "exec", "./chameleon"]
