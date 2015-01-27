@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require "sinatra"
+
+set :port, 80
+
+get "*" do
+  "#{ENV['SERVICE_NAME']}: #{params[:splat].first}"
+end
